@@ -138,16 +138,6 @@ async def not_joined(client: Client, message: Message):
                     url=f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
-    )
-    # Check if the third and fourth channels are set
-    try:
-        buttons.append(
-            [
-                InlineKeyboardButton(
-                    text='ʀᴇʟᴏᴀᴅ',
-                    url=f"https://t.me/{client.username}?start={message.command[1]}"
-                )
-            ]
         )
     except IndexError:
         pass
