@@ -35,7 +35,7 @@ FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001644866777"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
-START_PIC = os.environ.get("START_PIC", "https://graph.org/file/608d3fbbda4c219debdc2-8b78a684319f8c5cfd.jpg")
+START_PIC = os.environ.get("START_PIC", "https://graph.org/file/f295fd496ad3b13119bae-abef89a82d0a379171.jpg")
 FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/114a36349c7b77b6dcadb-9f85e281fb1a6d1663.jpg")
 
 FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "10")) # auto delete in seconds
