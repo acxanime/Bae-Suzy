@@ -83,7 +83,7 @@ async def start_command(client: Client, message: Message):
                 pass
 
         k = await client.send_message(chat_id=message.from_user.id, 
-                                      text=f"<b><i>🌺 Notice 🌺n\n\This File is deleting automatically in {file_auto_delete}. Forward in your Saved Messages..!</i></b>")
+                                      text=f"<b><i>🌺 Notice 🌺\n\nThis File is deleting automatically in {file_auto_delete}. Forward in your Saved Messages..!</i></b>")
 
         # Schedule the file deletion
         asyncio.create_task(delete_files(codeflix_msgs, client, k))
