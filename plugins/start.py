@@ -83,7 +83,7 @@ async def start_command(client: Client, message: Message):
                 pass
 
         k = await client.send_message(chat_id=message.from_user.id, 
-                                      text=f"<b>❗️ <u>IMPORTANT</u> ❗️\n\nThis Video / File Will Be Deleted In {file_auto_delete} (Due To Copyright Issues).\n\n📌 Please Forward This Video / File To Somewhere Else And Start Downloading There.</b>")
+                                      text=f"<b>❗️ <u>IMPORTANT</u> ❗️</b>\n\nThis Video / File Will Be Deleted In <b><u>{file_auto_delete}</u></b> (Due To Copyright Issues).\n\n<b>📌 Please Forward This Video / File To Somewhere Else And Start Downloading There.</b>")
 
         # Schedule the file deletion
         asyncio.create_task(delete_files(codeflix_msgs, client, k))
